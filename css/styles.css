@@ -1,0 +1,257 @@
+body{
+    background: #121012;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 60%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: #1e1b1e;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-container{
+    left: -30%;
+}
+.right-container{
+    left: 30%;
+}
+.container img{
+    width: 40px;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: movelines 6s linear forwards;
+}
+@keyframes movelines{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #1e1b1e;
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #1e1b1e;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container{
+        left: 0px;
+    }
+    .left-container img{
+        left: 10px;
+    }
+    .right-container img{
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid rgba(255, 255, 255, 0.1);
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+.front-container {
+    width: 100%;
+    padding: 20px;
+    background: #1e1b1e;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background-size: 35%; /* Set the background size to 40% width and auto height */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: top left; /* Display the background image at the top left corner */
+    transition: background 0.3s ease;
+}
+
+.front-container h2 {
+    margin-top: 5px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 100px; 
+}
+
+.front-container h6 {
+    margin-left: 100px;
+    margin-top: -1.8rem; 
+}
+
+.ftco-skills .container .front-container .skill-box {
+    margin: .75rem 0 1.25rem;
+    width: 80%; /* Set a custom width for skill-box */
+    max-width: 600px; /* Optionally set a max-width */
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.25rem;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ftco-skills .container .front-container .skill-box .skill .icon{
+    height: 3rem;
+    width: 3rem;
+    background-color: #1e1b1e;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ftco-skills .container .front-container .skill-box .skill .text{
+    height: 3rem;
+    width: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.ftco-skills .container .front-container .skill-box .skill .text span {
+    font-size: 0.7rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: #b8b8b8;
+    height: 25rem;
+    width: 100px;
+    flex: 1;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Add cursor pointer to indicate clickable */
+  }
+  
+  .expanded {
+    flex: 2;
+    background-color: #fff;
+    width: 25rem;
+  }
+  
+  
+  
+  
+  
