@@ -84,6 +84,8 @@ AOS.init({
 		   });
 	   });
 
+	
+	   
 	 // Google Map
 	 function initialize() {
 	   var latLng = { lat: 6.988642844105038, lng: 122.15972337339915 };
