@@ -9164,7 +9164,11 @@ textarea.form-control {
   width: 100%; }
   @media (max-width: 767.98px) {
     #map {
-      height: 300px; } }
+        height: 300px;
+        margin-left: -80px; /* Adjust this value as needed */
+    }
+}
+
 
 @-webkit-keyframes pulse {
   0% {
