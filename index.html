@@ -94,78 +94,119 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center">
-          	<h1 class="big big-2">EDUCATION</h1>
-            <h2 class="mb-4">Timeline</h2>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center">
+                    <h1 class="big big-2" data-aos="fade-up">Qualification</h1>
+					<h2 class="mb-4" data-aos="fade-up">Timelines</h2>
+                </div>
+            </div>
+            <div class="tabs">
+			<h4 class="work selected" onclick="showWorkTab()" style="cursor: pointer;">Experience</h4>
+			<h4 class="educ" onclick="showEducationTab()" style="cursor: pointer;">Education</h4>
+            </div>
+            <div class="education-tab" style="display:none;">
+                <div class="timeline education-timeline">
+
+                            <div class="container left-container education-container">
+								<img src="images/1707041221.png" style="position: absolute;">
+                                <div class="text-box" data-aos="fade-right">
+                                    <h2>Western Mindanao State University</h2>
+									<h5>Bachelor of Science in Information and Technology</h5>
+									<small>September 2020 – May 2024</small>
+                                    <span class="left-container-arrow"></span>
+                                </div>
+                            </div>
+							<div class="container left-container education-container">
+								<img src="images/1707041254.png" style="position: absolute;">
+                                <div class="text-box" data-aos="fade-right">
+									<h2>Universidad de Zamboanga Technical High School</h2>
+									<h5>Technical High School</h5>
+									<small>July 2015 – June 2018</small>
+                                    <span class="left-container-arrow"></span>
+                                </div>
+                            </div>
+							<div class="container left-container education-container">
+								<img src="images/1707041221.png" style="position: absolute;">
+                                <div class="text-box" data-aos="fade-right">
+									<h2>Divisoria Elementary School</h2>
+									<h5>Elementary</h5>
+									<small>June 2008 – March 2014</small>
+                                    <span class="left-container-arrow"></span>
+                                </div>
+                            </div>
+
+                            <div class="container right-container education-container">
+								<img src="images/1707041243.png" style="position: absolute;">
+                                <div class="text-box" data-aos="fade-left">
+									<h2>Immaculate Concepcion Archdiocesan School Tetuan Senior High</h2>
+									<h5>Science Technology Engineering and Mathematic</h5>
+									<small>June 2018 - March 2020</small>
+                                    <span class="right-container-arrow"></span>
+                                </div>
+                            </div>
+							<div class="container right-container education-container">
+								<img src="images/1707041264.png" style="position: absolute;">
+								<h2>Maria Clara L. Lobregat National High School</h2>
+								<h5>Junior High School</h5>
+								<small>June 2014 – March 2015</small>
+                                    <span class="right-container-arrow"></span>
+                                </div>
+                            </div>
+                </div>
+			<div class="work-tab">
+				<div class="timeline work-timeline">
+							<div class="container right-container work-container">
+								<img src="images/1708589682.png" style="position: absolute;">
+								<div class="text-box" data-aos="fade-left">
+									<h2>Portfolio Website with CMS (System Administration and Maintenance)</h2>
+									<h5>Full-Stack Programmer</h5>
+									<small>2023-2024</small>
+									<span class="right-container-arrow"></span>
+								</div>
+							</div>
+							<div class="container left-container work-container">
+								<img src="images/1708589682.png" style="position: absolute;">
+								<div class="text-box" data-aos="fade-right">
+									<h2>WasteNav: Enhancing Waste Management Operations with Mobile Solution (Capstone)</h2>
+									<h5>Lead Programmer</h5>
+									<small>2023-2024</small>
+									<span class="left-container-arrow"></span>
+								</div>
+							</div>
+							<div class="container right-container work-container">
+								<img src="images/1708589682.png" style="position: absolute;">
+								<div class="text-box" data-aos="fade-left">
+									<h2>WMSU Registrar Archiving and Management System</h2>
+									<h5>Lead Programmer</h5>
+									<small>2022-2023</small>
+									<span class="right-container-arrow"></span>
+								</div>
+							</div>
+							<div class="container left-container work-container">
+								<img src="images/1708589682.png" style="position: absolute;">
+								<div class="text-box" data-aos="fade-right">
+									<h2>Movie Ticket Reservation (Application Development)</h2>
+									<h5>Full-Stack Programmer</h5>
+									<small>2022-2023</small>
+									<span class="left-container-arrow"></span>
+								</div>
+							</div>
+				</div>
+			</div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ">
+                    <a href="{{ asset( $about->cv )}}" download="YourCVFileName.pdf" >
+                        <button class="btn-17">
+                            <span class="text-container">
+                                <span class="text">Download CV</span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
-		<div class="timeline">
-            <div class="container left-container">
-			<img src="images/1707041221.png" style="position: absolute;">
-                <div class="text-box" data-aos="fade-right">
-                    <h2>Western Mindanao State University</h2>
-                    <h5>Bachelor of Science in Information and Technology</h5>
-                    <small>September 2020 – May 2024</small>
-                    <p>Capstone Project and Research: WasteNav: Enhancing Waste Management Operations. Software Engineering Project: Registrar Archiving and Document Management System.</p>
-                    <span class="left-container-arrow"></span>
-                </div>
-            </div>
-            <div class="container right-container">
-			<img src="images/1707041243.png" style="position: absolute;">
-                <div class="text-box" data-aos="fade-left">
-                    <h2>Immaculate Concepcion Archdiocesan School Tetuan Senior High</h2>
-                    <h5>Science Technology Engineering and Mathematic</h5>
-                    <small>June 2018 - March 2020</small>
-                    <p>Research Defense: Lack of Medical Facilities: Barangay Cabaluay.</p>
-                    <span class="right-container-arrow"></span>
-                </div>
-            </div>
-			<div class="container left-container">
-				<img src="images/1707041254.png" style="position: absolute;">
-					<div class="text-box" data-aos="fade-right">
-						<h2>Universidad de Zamboanga Technical High School</h2>
-						<h5>Technical High School</h5>
-						<small>July 2015 – June 2018</small>
-						<p>CISCO NCII Holder</p>
-						<span class="left-container-arrow"></span>
-					</div>
-				</div>
-				<div class="container right-container">
-					<img src="images/1707041264.png" style="position: absolute;">
-						<div class="text-box" data-aos="fade-left">
-							<h2>Maria Clara L. Lobregat National High School</h2>
-							<h5>Junior High School</h5>
-							<small>June 2014 – March 2015</small>
-							<p></p>
-							<span class="right-container-arrow"></span>
-						</div>
-					</div>
-					<div class="container left-container">
-						<img src="images/1707041221.png" style="position: absolute;">
-							<div class="text-box" data-aos="fade-right">
-								<h2>Divisoria Elementary School</h2>
-								<h5>Elementary</h5>
-								<small>June 2008 – March 2014</small>
-								<p></p>
-								<span class="left-container-arrow"></span>
-							</div>
-						</div>
-					</div>
-				<div class="row justify-content-center mt-5">
-					<div class="col-md-6 text-center ftco-animate">
-						<a href="{{ asset( $about->cv )}}"download="YourCVFileName.pdf" >
-							<button class="btn-17">
-								<span class="text-container">
-								<span class="text">Download CV</span>
-								</span>
-							</button>
-						</a>
-					</div>
-				</div>
-    	</div>
     </section>
 
 	<section class="ftco-section ftco-skills" id="skills-section">
@@ -175,13 +216,10 @@
 					<h1 class="big big-2">SKILLS</h1>
 					<h2 class="mb-4">Technical Skills</h2>
 				</div>
-				<div class="col-md-4">
 					<div class="front-container" onmouseover="changeBackground(this)" onmouseleave="resetBackground(this)" data-aos="fade-right">
 						<div class="d-flex align-items-center mb-4">
-							<img src="images/frontend.png" class="ml-3 mt-3" style="max-width: 100px;">
 							<div>
 								<h2 class="mb-1">Front End</h2>
-								<h6 class="mb-0">Experience</h6>
 							</div>
 						</div>
 							<div class="skill-box">
@@ -217,76 +255,63 @@
 										<span>CSS 3</span>
 									</div>
 								</div>
-								
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-					<div class="front-container" onmouseover="changeBackground(this)" onmouseleave="resetBackground(this)" data-aos="fade-up">
-						<div class="d-flex align-items-center mb-4">
-							<img src="images/backend.png" class="ml-3 mt-3" style="max-width: 100px;">
-							<div>
-								<h2 class="mb-1">Back End</h2>
-								<h6 class="mb-0">Experience</h6>
-							</div>
-						</div>
-							<div class="skill-box">
-								<div class="skill">
-									<div class="icon">
-										<img src="images/laravel.png">
-									</div>
-									<div class="text">
-										<span>Laravel</span>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="icon">
-										<img src="images/mysql.png">
-									</div>
-									<div class="text">
-										<span>My SQL</span>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="icon">
-										<img src="images/django.png">
-									</div>
-									<div class="text">
-										<span>Django</span>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="icon">
-										<img src="images/php.png">
-									</div>
-									<div class="text">
-										<span>PHP</span>
-									</div>
+							<div class="d-flex align-items-center mb-4">
+								<div>
+									<h2 class="mb-1">Back End</h2>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-					<div class="front-container" onmouseover="changeBackground(this)" onmouseleave="resetBackground(this)" data-aos="fade-left">
-						<div class="d-flex align-items-center mb-4">
-							<img src="images/ux.png" class="ml-3 mt-3" style="max-width: 100px;">
-							<div>
-								<h2 class="mb-1">Other</h2>
-								<h6 class="mb-0">Experience</h6>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill">
-								<div class="icon">
-									<img src="images/git.png">
+								<div class="skill-box">
+									<div class="skill">
+										<div class="icon">
+											<img src="images/laravel.png">
+										</div>
+										<div class="text">
+											<span>Laravel</span>
+										</div>
+									</div>
+									<div class="skill">
+										<div class="icon">
+											<img src="images/mysql.png">
+										</div>
+										<div class="text">
+											<span>My SQL</span>
+										</div>
+									</div>
+									<div class="skill">
+										<div class="icon">
+											<img src="images/django.png">
+										</div>
+										<div class="text">
+											<span>Django</span>
+										</div>
+									</div>
+									<div class="skill">
+										<div class="icon">
+											<img src="images/php.png">
+										</div>
+										<div class="text">
+											<span>PHP</span>
+										</div>
+									</div>
 								</div>
-								<div class="text">
-									<span>Github</span>
+								<div class="d-flex align-items-center mb-4">
+									<div>
+										<h2 class="mb-1">Other</h2>
+
+									</div>
 								</div>
-							</div>
+								<div class="skill-box">
+									<div class="skill">
+										<div class="icon">
+											<img src="images/git.png">
+										</div>
+										<div class="text">
+											<span>Github</span>
+										</div>
+									</div>
+								</div>
 						</div>
-					</div>
-				</div>
 	
 	
 				</div>
@@ -524,10 +549,10 @@
 
   <!-- loader -->
   <div id="loading" class="show fullscreen">
-  <svg class="polyline" width="64px" height="48px">
-    <polyline class="path" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
-    <polyline class="path1" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
-  </svg>
+	<div class="image">
+		<img src="images/1.jpg" id="back" height="auto" width="auto">
+		<img src="images/2.jpg" id="front">
+	</div>
 </div>
 
 <a href="#" class="float">
@@ -553,6 +578,7 @@
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnNahiAE9r8sLhxGgiE0IhHtMRgR-spGU"></script>
   <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </body>
 </html>

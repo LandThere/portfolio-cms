@@ -37,13 +37,14 @@ AOS.init({
 		 if ($('#loading').length > 0) {
 		   $('#loading').removeClass('show');
 		 }
-	   }, 500); // 2000 milliseconds = 2 seconds
+	   }, 2500); // 2000 milliseconds = 2 seconds
 	 };
 	 
 	 // Call the loader function when the page is ready
 	 $(document).ready(function() {
 	   loader();
 	 });
+	 
 	 
 	 // Floating Nav
    function highlightActiveTab() {
